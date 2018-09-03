@@ -63,7 +63,7 @@ def print_terminal(tot_mon, tot_rev, avg_m_rev, max_inc_m_rev, max_inc_m, max_de
 def print_text_file(tot_mon, tot_rev, avg_m_rev, max_inc_m_rev, max_inc_m, max_dec_m_rev, max_dec_m, user_data_file):
     user_output_file = "Financial_Analysis_" + user_data_file.strip(".csv") + ".txt"
     user_output_file_path = "text_output\\{}".format(user_output_file)
-    with open(user_output_file_path, "w") as text_file:
+    with open(user_output_file_path, "w") as text_file:  #in class, jeff showed that can do text_file.write(str(value))
         print("\nFinancial Analysis \n--------------------------", file=text_file)
         print("Total Months: {}".format(tot_mon), file=text_file)
         print("Total Revenue: ${}".format(tot_rev), file=text_file)
